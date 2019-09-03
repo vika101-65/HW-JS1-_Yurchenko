@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>HW2</title>
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<script>
+				var letters = []
+				var str = "Backend As A Servise"
+				var mas = str.split(' ')
+				console.log(mas)
+				for (i=0; i<mas.length; i++){
+					var a = mas[i].charAt(0);
+					var m = letters.push(a);
+					console.log(m)
+				}
+				var result = letters.join('')
+				console.log(result)
+			</script>
+			<script>
+				function check (arg) {
+					if (typeof(arg) === "number"){
+						var newData = new Date
+						console.log(newData.toLocaleString())
+					} else {
+						console.log("Неверный тип данных")
+					}
+				}
+			</script>
+		</main>
+		<footer></footer>
+	</body>
+</html>
